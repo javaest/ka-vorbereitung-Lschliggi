@@ -15,7 +15,7 @@ import java.util.Date;
 public class RestaurantTest {
 
     @Test
-    public void testBestellungAufnehmen() {
+    public void testBestellungAufnehmen() throws Exception {
         Restaurant restaurant = new Restaurant();
         Gericht gericht = new Gericht("Pizza Margherita", "Pizza mit Tomaten und Käse", 8.50);
         Kunde kunde = new Kunde("Max Mustermann", 1);
@@ -29,7 +29,7 @@ public class RestaurantTest {
     }
 
     @Test
-    public void testBestellungEntfernen() {
+    public void testBestellungEntfernen() throws Exception{
         Restaurant restaurant = new Restaurant();
         Gericht gericht = new Gericht("Pizza Margherita", "Pizza mit Tomaten und Käse", 8.50);
         Kunde kunde = new Kunde("Max Mustermann", 1);
