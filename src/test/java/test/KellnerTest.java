@@ -12,7 +12,7 @@ public class KellnerTest {
     public void testKellnerConstructor() {
         Kellner kellner = new Kellner("Anna Schmidt", 101);
         assertEquals("Anna Schmidt", kellner.getName());
-        assertEquals(101, kellner.mitarbeiterID());
+        assertEquals(101, kellner.mitarbeiterID);
     }
 
     @Test
@@ -25,7 +25,7 @@ public class KellnerTest {
     @Test
     public void testSetKellnerID() {
         Kellner kellner = new Kellner("Anna Schmidt", 101);
-        kellner.mitarbeiterID(102);
-        assertEquals(102, kellner.mitarbeiterID());
+        kellner.mitarbeiterID = 102;
+        assertEquals(102, kellner.mitarbeiterID);
     }
 }

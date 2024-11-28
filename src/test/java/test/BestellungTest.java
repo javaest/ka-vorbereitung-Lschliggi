@@ -18,8 +18,8 @@ public class BestellungTest {
         Kellner kellner = new Kellner("Anna Schmidt", 101);
         Bestellung bestellung = new Bestellung(1, new Date(), kunde, kellner);
 
-        assertEquals(1, bestellung.bestellnummer());
-        assertNotNull(bestellung.bestelldatum());
+        assertEquals(1, bestellung.bestellnummer);
+        assertNotNull(bestellung.bestelldatum);
         assertEquals(kunde, bestellung.getKunde());
         assertEquals(kellner, bestellung.getKellner());
     }

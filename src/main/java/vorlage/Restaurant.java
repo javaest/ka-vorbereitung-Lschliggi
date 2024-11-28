@@ -1,5 +1,6 @@
 package vorlage;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Restaurant {
@@ -8,10 +9,22 @@ public class Restaurant {
 
     // Methoden zur Verwaltung von Gerichten und Bestellungen
     public void bestellungAufnehmen(Bestellung bestellung) {
-        // Implementierung
+        bestellungen.add(bestellung);
+    }
+
+    public void bestellungEntfernen(Bestellung bestellung){
+        bestellungen.remove(bestellung);
     }
 
     public void gerichtHinzufuegen(Gericht gericht) {
-        // Implementierung
+
+    }
+
+    public Restaurant(){
+        this.bestellungen = new ArrayList<Bestellung>();
+    }
+
+    public List<Bestellung> getBestellungen(){
+        return bestellungen;
     }
 }
